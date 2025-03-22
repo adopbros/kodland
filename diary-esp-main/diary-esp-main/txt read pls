@@ -1,0 +1,8 @@
+Mejorable:
+
+El bloque try-except está capturando todas las excepciones, lo cual no es ideal, porque puede ocultar errores importantes. Sería mejor capturar excepciones específicas (por ejemplo, FileNotFoundError, ValueError, etc.).
+
+También, el código no maneja errores si el archivo no puede ser guardado o si no se puede cargar el modelo de clasificación. Sería útil agregar un manejo de errores adecuado para esas situaciones.
+
+Si la imagen no es reconocida correctamente, el bot debería proporcionar más detalles sobre el problema (por ejemplo, "Imagen no válida" o algo más específico).
+
